@@ -30,5 +30,5 @@ document.addEventListener("click", (e) => {
   playAudio(x);
   setTimeout(() => {
     body.removeChild(div);
-  }, 1100);
+  }, 1000);
 });
