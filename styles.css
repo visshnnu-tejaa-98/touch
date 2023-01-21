@@ -10,21 +10,6 @@ body h1 {
   margin-bottom: 0;
 }
 
-body .description {
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  font-weight: 500;
-}
-
-.curser {
-  width: 8px;
-  height: 20px;
-  background-color: #fefcfb;
-}
-
 .dot {
   height: 20px;
   width: 20px;
@@ -61,10 +46,13 @@ body .description {
   }
 }
 
-.curser {
+#elementEl {
+  font-size: 1.5rem;
+}
+#elementEl::after {
+  content: "|";
   margin-left: 5px;
-  animation: blink 0.3s infinite;
-  -webkit-animation: blink 0.3s infinite;
+  animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
