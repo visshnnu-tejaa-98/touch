@@ -12,6 +12,11 @@ function typeWriter(el) {
 
 typeWriter(elementEl);
 
+function playAudio(x) {
+  x.play();
+  x.currentTime = 0;
+}
+
 document.addEventListener("click", (e) => {
   let body = document.querySelector("body");
   let div = document.createElement("div");
@@ -22,11 +27,7 @@ document.addEventListener("click", (e) => {
   div.style.backgroundColor = randomColor;
   div.setAttribute("class", "dot");
   body.append(div);
-  function playAudio() {
-    x.play();
-  }
-  playAudio();
-
+  playAudio(x);
   setTimeout(() => {
     body.removeChild(div);
   }, 1100);
